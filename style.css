@@ -1,0 +1,101 @@
+#profile {
+    border-radius: 50%;
+}
+.container>h1 {
+    color: #96B6C5;
+    margin: 50px;
+}
+.frame {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    border: 10px solid #F1F0E8;
+    position: absolute;
+    top: 0;
+}
+.rectangle {
+    height: 600px;
+    background-color: #96B6C5;
+    border-radius: 2%;
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 100px;
+    grid-template-rows: 100px 1fr 1fr 100px;
+    gap: 10px;
+    margin-top: 50px;
+}
+.header-picture {
+    height: 350px;
+    width: 350px;
+    position: relative;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.rectangle>h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 10em;
+    color: white;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    z-index: 2;
+}
+.rectangle>p {
+    font-family: 'Noto Sans Indic Siyaq Numbers', sans-serif;
+    font-size: 2em;
+    color: white;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    z-index: 2;
+}.dots {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.curves {
+    position: relative;
+    left:200px;
+    top: 400px;
+    z-index: 1;
+}
+h2 {
+    color: #ADC4CE;
+}
+#contact>.container>div>h1 {
+    color: #96B6C5;
+}
+.btn {
+    background-color: #EEE0C9;
+    color: white;
+}
+#footer {
+    background-color: #EEE0C9;
+}
+@media (min-width: 500px) and (max-width: 1000px) {
+    .header-picture {
+        visibility: collapse;
+    }
+}
+@media (max-width: 500px) {
+    .header-picture{
+        visibility: collapse;
+        width: 0px;
+    }
+    .rectangle>h1 {
+        font-size: 5em;
+    }
+    .curves {
+        left: 150px ;
+        top: 300px;
+        height: 120px;
+    }
+    .rectangle {
+        height: 400px;
+        grid-template-columns: 100px 100px 0px 0px;
+        grid-template-rows: 100px 100px 0px 0px;
+        gap: 0;
+    }
+    .rectangle>p {
+        font-size: 20px;
+    }
+    
+}
